@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ea741d2-a544-4c1e-94fa-5b3b790c2ff9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/tasks.html" afterPath="$PROJECT_DIR$/src/main/webapp/tasks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/tasks.html" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/tasks.html" />
-    </list>
+    <list default="true" id="6ea741d2-a544-4c1e-94fa-5b3b790c2ff9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -380,12 +375,12 @@
       <updated>1511128409524</updated>
       <workItem from="1511128414832" duration="14352000" />
       <workItem from="1511193708716" duration="466000" />
-      <workItem from="1511190986363" duration="926000" />
+      <workItem from="1511190986363" duration="960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15744000" />
+    <option name="totallyTimeSpent" value="15778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
