@@ -18,7 +18,7 @@
 	<main  id="taskPage">
 	<section id="taskCreation" class="not">
 		<form id="taskForm">
-			<input type="hidden" name="id"/>z`
+			<input type="hidden" name="id"/>
 			<div>
 				<label>Task</label> <input type="text" required="required"
 					name="task" class="large" placeholder="Breakfast at Tiffanys" maxlength="200"  />
@@ -74,7 +74,7 @@ function initScreen() {
 		});		
 	});
 }
-if (window.indexedDB) { 
+if (window.indexedDB) {
 	console.log("using indexedDB 111917kl");
 	$.getScript( "resources/scripts/tasks-indexeddb.js" )
 	.done(function( script, textStatus ) {

@@ -22,6 +22,14 @@
             <version>2.8.2</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.6</version>
+        </dependency>
+
+
     </dependencies>
 
     <!-- following ensures that will get java8 compilation even with maven updates -->

@@ -30,6 +30,7 @@ tasksController = function() {
      */
     function displayTasksServer(data) { //this needs to be bound to the tasksController -- used bind in retrieveTasksServer 111917kl
     	console.log(data);
+
         tasksController.loadServerTasks(data);
     }
 	
@@ -53,7 +54,7 @@ tasksController = function() {
 		});
 	}
 	
-	return { 
+	return {
 		init : function(page, callback) { 
 			if (initialised) {
 				callback()
