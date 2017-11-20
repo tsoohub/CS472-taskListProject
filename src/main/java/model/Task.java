@@ -10,6 +10,7 @@ public class Task {
     public String priority;
 
     public Task(int id, String task, String dueDate, String category, int userid, String priority) {
+
         this.id = id;
         this.task = task;
         this.dueDate = dueDate;
@@ -17,7 +18,6 @@ public class Task {
         this.userid = userid;
         this.priority = priority;
 
-        System.out.println(this.dueDate);
     }
 
     public int getId() {

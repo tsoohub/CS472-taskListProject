@@ -135,3 +135,9 @@ label.error {
 .taskCompleted {
 	text-decoration: line-through;
 }
+#dueDateSort {
+	background: url(http://tablesorter.com/themes/blue/bg.gif) no-repeat 99%;
+}
+#prioritySort {
+	background: url(http://tablesorter.com/themes/blue/bg.gif) no-repeat 99%;
+}

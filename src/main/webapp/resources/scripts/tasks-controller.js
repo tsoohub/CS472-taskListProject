@@ -113,23 +113,26 @@ tasksController = function() {
 					storageEngine.findById('task', $(evt.target).data().taskId, function(task) {
 						task.complete = true;
 						storageEngine.save('task', task, function() {
-							tasksController.loadTasks();
+							tasksController.loadTasks("Due", true);
 						},errorLogger);
 					}, errorLogger);
 				});
 				
 				$(taskPage).find('#saveTask').click(function(evt) {
-					evt.preventDefault();
-					if ($(taskPage).find('form').valid()) {
-						var task = $(taskPage).find('form').toObject();		
-						storageEngine.save('task', task, function() {
-							$(taskPage).find('#tblTasks tbody').empty();
-							tasksController.loadTasks();
-							clearTask();
-							$(taskPage).find('#taskCreation').addClass('not');
-						}, errorLogger);
-					}
-				});
+                    evt.preventDefault();
+                    if ($(taskPage).find('form').valid()) {
+                        var task = $(taskPage).find('form').toObject();
+                        console.log(task);
+                        storageEngine.save('task', task, function() {
+                            console.log("save success");
+                            $(taskPage).find('#tblTasks tbody').empty();
+                            tasksController.loadTasks("Due", true);
+                            clearTask();
+                            $(taskPage).find('#taskCreation').addClass('not');
+                            console.log("end function");
+                        }, errorLogger);
+                    }
+                });
 				initialised = true;
 			}
 		},
@@ -149,12 +152,24 @@ tasksController = function() {
                 //renderTable(); --skip for now, this just sets style class for overdue tasks 111917kl
             });
 		},
-		loadTasks : function() {
+		loadTasks : function(filterField, increase) {
 			$(taskPage).find('#tblTasks tbody').empty();
 			storageEngine.findAll('task', function(tasks) {
 				tasks.sort(function(o1, o2) {
-					return Date.parse(o1.requiredBy).compareTo(Date.parse(o2.requiredBy));
+					if(filterField ==="Due"){
+						if(increase === true)
+                        	return Date.parse(o1.requiredBy).compareTo(Date.parse(o2.requiredBy));
+						else
+                            return Date.parse(o2.requiredBy).compareTo(Date.parse(o1.requiredBy));
+					} else if(filterField ==="Priority"){
+						if(increase === true)
+                        	return (o1.priority) < (o2.priority);
+						else
+                            return (o2.priority) < (o1.priority);
+					}
+
 				});
+
 				$.each(tasks, function(index, task) {
 					if (!task.complete) {
 						task.complete = false;
