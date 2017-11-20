@@ -55,7 +55,8 @@
 	<section>
 		<table id="tblTasks">
 			<colgroup>
-				<col width="40%">
+				<col width="30%">
+				<col width="10%">
 				<col width="15%">
 				<col width="10%">
 				<col width="15%">
@@ -64,6 +65,7 @@
 			<thead>
 				<tr>
 					<th>Name</th>
+					<th>User <span id="userSort">&nbsp &nbsp &nbsp &nbsp</span></th>
 					<th>Due <span id="dueDateSort">&nbsp &nbsp &nbsp &nbsp</span></th>
                     <th>Priority <span id="prioritySort">&nbsp &nbsp &nbsp &nbsp</span></th>
 					<th>Category</th>
@@ -114,6 +116,7 @@ if (window.indexedDB) {
 <script id="taskRow" type="text/x-jQuery-tmpl">
 <tr>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}>${task}</td>
+	<td {{if complete == true}}class="taskCompleted"{{/if}}>${userid}</td>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}><time datetime="${requiredBy}">${requiredBy}</time></td>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}>${priority}</td>
 	<td {{if complete == true}}class="taskCompleted"{{/if}}>${category}</td>

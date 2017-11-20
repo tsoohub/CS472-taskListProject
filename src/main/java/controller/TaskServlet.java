@@ -49,6 +49,8 @@ public class TaskServlet extends HttpServlet {
 
         String JSONtasks = new Gson().toJson(taskList);
 
+
+
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
         out.write(JSONtasks);
