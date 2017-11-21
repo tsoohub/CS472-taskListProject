@@ -2,6 +2,7 @@ package controller;
 
 import com.google.gson.Gson;
 import model.Task;
+import model.User;
 import utility.DBConnection;
 import utility.MockData;
 
@@ -20,35 +21,79 @@ import java.util.List;
 public class TaskServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        Connection db =  DBConnection.getConnection();
+
+        String type = request.getParameter("type");
+        String name = request.getParameter("name");
+        String due = request.getParameter("due");
+        String category = request.getParameter("category");
+        int userid = Integer.parseInt(request.getParameter("userid")) ;
+        String priority = request.getParameter("priority");
+
+
+        System.out.println(type+" "+name+" "+due+" "+category+ " "+userid+" "+priority);
+
+        String query = "";
+        if(type != null && type.equals("add")) {
+
+            query = "INSERT INTO task(name, due, category, user_id, priority) VALUES ('"
+                    +name +"', '" + due + "', '" +category +"'," + userid + ",'" + priority +"')";
+
+            try {
+                PreparedStatement preparedStmt = db.prepareStatement(query);
+                preparedStmt.execute();
+
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
-        List<Task> taskList = new ArrayList<>();
-
-
         Connection db =  DBConnection.getConnection();
 
-        String query = "SELECT * FROM task";
-        try {
-            Statement st = db.createStatement();
-            ResultSet rs = st.executeQuery(query);
-            while(rs.next()) {
-                Task task = new Task(rs.getInt("id"),
-                        rs.getString("name"),
-                        rs.getString("due"),
-                        rs.getString("category"),
-                        rs.getInt("user_id"),
-                        rs.getString("priority"));
+        String query = "";
+        String JSONtasks = "";
+        String param = request.getParameter("reqtype");
 
-                taskList.add(task);
+        if(param != null && param.equals("user")) {
+           List<User> userList = new ArrayList<>();
+           query = "SELECT * FROM user";
+
+            try {
+                Statement st = db.createStatement();
+                ResultSet rs = st.executeQuery(query);
+                while(rs.next()) {
+                    User user = new User(rs.getInt("id"), rs.getString("name"));
+                    userList.add(user);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
+            JSONtasks = new Gson().toJson(userList);
         }
+        else {
+            List<Task> taskList = new ArrayList<>();
+            query = "SELECT * FROM task";
+            try {
+                Statement st = db.createStatement();
+                ResultSet rs = st.executeQuery(query);
+                while(rs.next()) {
+                    Task task = new Task(rs.getInt("id"),
+                            rs.getString("name"),
+                            rs.getString("due"),
+                            rs.getString("category"),
+                            rs.getInt("user_id"),
+                            rs.getString("priority"));
 
-        String JSONtasks = new Gson().toJson(taskList);
-
+                    taskList.add(task);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            JSONtasks = new Gson().toJson(taskList);
+        }
 
 
         response.setContentType("application/json");
