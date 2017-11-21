@@ -141,6 +141,10 @@ label.error {
 #prioritySort {
 	background: url(http://tablesorter.com/themes/blue/bg.gif) no-repeat 99%;
 }
+
+#userSort {
+	background: url(http://tablesorter.com/themes/blue/bg.gif) no-repeat 99%;
+}
 #userfilter{
 	width: 80px;
 }
