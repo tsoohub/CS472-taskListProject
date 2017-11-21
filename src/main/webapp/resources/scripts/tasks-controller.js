@@ -86,8 +86,6 @@ tasksController = function() {
 
     function displayAddUser(data) { //this needs to be bound to the tasksController -- used bind in retrieveTasksServer 111917kl
         console.log(data);
-        // Retrieve tasks list from Server side.
-        retrieveTasksServer();
     }
 	
 	function taskCountChanged() {
@@ -205,6 +203,7 @@ tasksController = function() {
 		 * modification of the loadTasks method to load tasks retrieved from the server
          */
 		loadServerTasks: function(tasks) {
+            storageEngine.initializedObjectStores = {};
             $(taskPage).find('#tblTasks tbody').empty();
 
             $.each(tasks, function (index, task) {
@@ -213,34 +212,19 @@ tasksController = function() {
                 }
                 $('#taskRow').tmpl(task).appendTo($(taskPage).find('#tblTasks tbody'));
                 taskCountChanged();
-
-				storageEngine.save('task', task, function(){
-					console.log("task: " + task);
-				}, errorLogger);
+				storageEngine.save('task', task, function(){}, errorLogger);
             });
 		},
         loadServerUsers: function(tasks) {
-            storageEngine.initializedObjectStores = {};
             $(taskPage).find('#users').empty();
             $.each(tasks, function (index, task) {
-
                 $('#userOption').tmpl(task).appendTo($(taskPage).find('#users'));
-
-                storageEngine.save('task', task, function(){
-                    console.log("task: " + task);
-                }, errorLogger);
             });
         },
         loadServerTeams: function(tasks) {
-            storageEngine.initializedObjectStores = {};
             $(taskPage).find('#team').empty();
             $.each(tasks, function (index, task) {
-
                 $('#teamOption').tmpl(task).appendTo($(taskPage).find('#team'));
-
-                storageEngine.save('task', task, function(){
-                    console.log("task: " + task);
-                }, errorLogger);
             });
         },
         loadInitialUsers: function() {
@@ -252,10 +236,8 @@ tasksController = function() {
                 }
             }).done(function (data) {
                 $('#userfilter').append('<option></option>');
-
                 $.each(data, function (index, task) {
                     $('#userOption').tmpl(task).appendTo($(taskPage).find('#userfilter'));
-                    console.log('about to render users filter to combobox ');
                 });
             });
         },
@@ -274,7 +256,6 @@ tasksController = function() {
 						else
                             return (o2.priority) < (o1.priority);
 					}
-
 				});
 
 				$.each(tasks, function(index, task) {
@@ -283,7 +264,7 @@ tasksController = function() {
 					}
 					$('#taskRow').tmpl(task).appendTo($(taskPage).find('#tblTasks tbody'));
 					taskCountChanged();
-					renderTable();
+					//renderTable();
 				});
 			}, errorLogger);
 		} 
