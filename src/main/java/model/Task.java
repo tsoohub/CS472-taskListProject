@@ -3,21 +3,23 @@ package model;
 public class Task {
 
     private int id;
+
     private int userid;
+    private String username;
     private String task;
-    private String dueDate;
+    private String requiredBy;
     private String category;
     public String priority;
 
-    public Task(int id, String task, String dueDate, String category, int userid, String priority) {
+    public Task(int id, String task, String dueDate, String category, int userid, String username, String priority) {
 
         this.id = id;
         this.task = task;
-        this.dueDate = dueDate;
+        this.requiredBy = dueDate;
         this.category = category;
         this.userid = userid;
         this.priority = priority;
-
+        this.username = username;
     }
 
     public int getId() {
@@ -36,12 +38,12 @@ public class Task {
         this.task = task;
     }
 
-    public String getDueDate() {
-        return dueDate;
+    public String getRequiredBy() {
+        return requiredBy;
     }
 
-    public void setDueDate(String dueDate) {
-        this.dueDate = dueDate;
+    public void setRequiredBy(String dueDate) {
+        this.requiredBy = dueDate;
     }
 
     public String getCategory() {
@@ -66,5 +68,13 @@ public class Task {
 
     public void setPriority(String priority) {
         this.priority = priority;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

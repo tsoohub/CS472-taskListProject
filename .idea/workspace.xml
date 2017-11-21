@@ -6,11 +6,22 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" description="String JSONtasks = new Gson().toJson(taskList);" line="95" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" description="String JSONtasks = new Gson().toJson(taskList);" line="96" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ea741d2-a544-4c1e-94fa-5b3b790c2ff9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/model/Task.class" afterPath="$PROJECT_DIR$/target/classes/model/Task.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/model/Task.class" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/classes/model/Task.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" afterPath="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/Task.java" afterPath="$PROJECT_DIR$/src/main/java/model/Task.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/tasks.html" afterPath="$PROJECT_DIR$/src/main/webapp/tasks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/resources/scripts/tasks-controller.js" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/resources/scripts/tasks-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/tasks.html" afterPath="$PROJECT_DIR$/target/taskListProject-1.0-SNAPSHOT/tasks.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,39 +34,110 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tasks-controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
+      <file leaf-file-name="tasks.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+            <state relative-caret-position="255">
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TaskServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+            <state relative-caret-position="215">
+              <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding>
-                <marker date="1511221468067" expanded="true" signature="1276:1332" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="1276:1333" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="1276:1341" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="1276:1374" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="1276:1376" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="1276:1389" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="1276:1391" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="1276:1403" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="1276:1407" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="1276:1421" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="1276:1422" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="1276:1423" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="1276:1439" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="1276:1440" ph="INSERT INTO task... " />
-                <marker date="1511221468067" expanded="true" signature="2152:2170" ph="SELECT * FRO... user" />
-                <marker date="1511221468067" expanded="true" signature="2716:2734" ph="SELECT task.... task" />
+                <marker date="1511278482536" expanded="true" signature="1276:1332" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="1276:1333" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="1276:1341" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="1276:1374" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="1276:1376" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="1276:1389" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="1276:1391" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="1276:1403" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="1276:1407" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="1276:1421" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="1276:1422" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="1276:1423" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="1276:1439" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="1276:1440" ph="INSERT INTO task... " />
+                <marker date="1511278482536" expanded="true" signature="2152:2170" ph="SELECT * FRO... user" />
+                <marker date="1511278482536" expanded="true" signature="2716:2822" ph="SELECT task.... task" />
+                <marker date="1511278482536" expanded="true" signature="2716:2850" ph="SELECT task.... task" />
+                <marker date="1511278482536" expanded="true" signature="2716:2863" ph="SELECT task.... task" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utility/DBConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Task.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+              <folding>
+                <element signature="e#1149#1150#0" expanded="true" />
+                <element signature="e#1178#1179#0" expanded="true" />
+                <element signature="e#1219#1220#0" expanded="true" />
+                <element signature="e#1255#1256#0" expanded="true" />
+                <element signature="e#1444#1445#0" expanded="true" />
+                <element signature="e#1475#1476#0" expanded="true" />
+                <element signature="e#1523#1524#0" expanded="true" />
+                <element signature="e#1563#1564#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="209" column="8" lean-forward="false" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks-webstorage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-webstorage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks-indexeddb.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-indexeddb.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="99" lean-forward="false" selection-start-line="15" selection-start-column="99" selection-end-line="15" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sort.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/sort.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="49" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="49" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,7 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>btn</find>
       <find>fromObject</find>
       <find>clearTask</find>
       <find>addClass</find>
@@ -84,7 +165,6 @@
       <find>td</find>
       <find>priority</find>
       <find>Priority</find>
-      <find>btnRetrieveTasks</find>
       <find>users</find>
       <find>add task</find>
       <find>ajax</find>
@@ -92,13 +172,18 @@
       <find>taskPage</find>
       <find>taskRow</find>
       <find>taskCountChanged</find>
-      <find>btnAddTask</find>
       <find>retrieveTasksServer</find>
       <find>retrieveUsersServer</find>
       <find>btnAdd</find>
       <find>saveTask</find>
       <find>saveTaskServer</find>
       <find>alert</find>
+      <find>sort.js</find>
+      <find>btnAddTask</find>
+      <find>deleteRow</find>
+      <find>user_id</find>
+      <find>btnRetrieveTasks</find>
+      <find>sort</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,15 +198,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/utility/DBConnection.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Task.java" />
         <option value="$PROJECT_DIR$/src/main/java/utility/MockData.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/tasks.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/controller/TaskServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Task.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/tasks.html" />
       </list>
     </option>
   </component>
@@ -148,10 +233,10 @@
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="11" />
-    <option name="y" value="253" />
+    <option name="x" value="-41" />
+    <option name="y" value="-15" />
     <option name="width" value="1296" />
-    <option name="height" value="788" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -168,14 +253,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="taskListProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="taskListProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taskListProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taskListProject" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taskListProject" type="b2602c69:ProjectViewProjectNode" />
@@ -264,8 +353,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,7 +363,7 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/W3D2-PRG" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -467,20 +557,31 @@
       <updated>1511128409524</updated>
       <workItem from="1511128414832" duration="14352000" />
       <workItem from="1511193708716" duration="466000" />
-      <workItem from="1511190986363" duration="21142000" />
+      <workItem from="1511190986363" duration="25035000" />
+      <workItem from="1511233766186" duration="4299000" />
+      <workItem from="1511276660535" duration="3857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35960000" />
+    <option name="totallyTimeSpent" value="48009000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -489,16 +590,16 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48895898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26281112" sideWeight="0.48264983" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2667758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2753404" sideWeight="0.48264983" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27891654" sideWeight="0.51735014" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -561,6 +662,96 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/sort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="140" column="9" lean-forward="false" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/jquery-2.0.3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26741">
+          <caret line="1573" column="26" lean-forward="false" selection-start-line="1573" selection-start-column="26" selection-end-line="1573" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="28" />
+          <folding>
+            <marker date="1511278482536" expanded="true" signature="1276:1332" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1333" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1341" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1374" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1376" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1389" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1391" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1403" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1407" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1421" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1422" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1423" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1439" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1440" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="2152:2170" ph="SELECT * FRO... user" />
+            <marker date="1511278482536" expanded="true" signature="2716:2822" ph="SELECT task.... task" />
+            <marker date="1511278482536" expanded="true" signature="2716:2850" ph="SELECT task.... task" />
+            <marker date="1511278482536" expanded="true" signature="2716:2863" ph="SELECT task.... task" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-webstorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3502">
+          <caret line="206" column="18" lean-forward="true" selection-start-line="206" selection-start-column="18" selection-end-line="206" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
           <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
           <folding />
@@ -589,9 +780,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -615,7 +804,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
+          <folding>
+            <marker date="1511278482536" expanded="true" signature="1276:1332" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1333" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1341" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1374" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1376" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1389" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1391" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1403" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1407" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1421" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1422" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1423" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1439" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1440" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="2152:2170" ph="SELECT * FRO... user" />
+            <marker date="1511278482536" expanded="true" signature="2716:2822" ph="SELECT task.... task" />
+            <marker date="1511278482536" expanded="true" signature="2716:2850" ph="SELECT task.... task" />
+            <marker date="1511278482536" expanded="true" signature="2716:2863" ph="SELECT task.... task" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -649,7 +857,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
+          <folding>
+            <marker date="1511278482536" expanded="true" signature="1276:1332" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1333" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1341" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1374" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1376" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1389" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1391" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1403" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1407" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1421" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1422" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1423" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1439" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1440" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="2152:2170" ph="SELECT * FRO... user" />
+            <marker date="1511278482536" expanded="true" signature="2716:2822" ph="SELECT task.... task" />
+            <marker date="1511278482536" expanded="true" signature="2716:2850" ph="SELECT task.... task" />
+            <marker date="1511278482536" expanded="true" signature="2716:2863" ph="SELECT task.... task" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -657,9 +884,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -675,21 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1343">
           <caret line="79" column="19" lean-forward="true" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -719,18 +929,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/jquery-2.0.3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taskListProject.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,7 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,14 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="1352" column="0" lean-forward="false" selection-start-line="1352" selection-start-column="0" selection-end-line="1352" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utility/MockData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -784,18 +977,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/sort.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        <state relative-caret-position="85">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/terminal.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-webstorage.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/jquery-2.0.3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        <state relative-caret-position="17">
+          <caret line="1573" column="26" lean-forward="false" selection-start-line="1573" selection-start-column="26" selection-end-line="1573" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/styles/tasks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="140" column="9" lean-forward="false" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="1520" column="0" lean-forward="false" selection-start-line="1520" selection-start-column="0" selection-end-line="1520" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/sort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="49" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -808,102 +1032,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-webstorage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utility/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="119">
+          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="130" column="76" lean-forward="true" selection-start-line="130" selection-start-column="76" selection-end-line="130" selection-end-column="76" />
+        <state relative-caret-position="33">
+          <caret line="209" column="8" lean-forward="false" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        <state relative-caret-position="254">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
           <folding>
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1051#1052#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1271#1272#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
+            <element signature="e#1444#1445#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
+            <element signature="e#1523#1524#0" expanded="true" />
+            <element signature="e#1563#1564#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/tasks-controller.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+        <state relative-caret-position="255">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/TaskServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        <state relative-caret-position="215">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding>
-            <marker date="1511221468067" expanded="true" signature="1276:1332" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="1276:1333" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="1276:1341" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="1276:1374" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="1276:1376" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="1276:1389" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="1276:1391" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="1276:1403" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="1276:1407" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="1276:1421" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="1276:1422" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="1276:1423" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="1276:1439" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="1276:1440" ph="INSERT INTO task... " />
-            <marker date="1511221468067" expanded="true" signature="2152:2170" ph="SELECT * FRO... user" />
-            <marker date="1511221468067" expanded="true" signature="2716:2734" ph="SELECT task.... task" />
+            <marker date="1511278482536" expanded="true" signature="1276:1332" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1333" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1341" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1374" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1376" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1389" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1391" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1403" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1407" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1421" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1422" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1423" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1439" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="1276:1440" ph="INSERT INTO task... " />
+            <marker date="1511278482536" expanded="true" signature="2152:2170" ph="SELECT * FRO... user" />
+            <marker date="1511278482536" expanded="true" signature="2716:2822" ph="SELECT task.... task" />
+            <marker date="1511278482536" expanded="true" signature="2716:2850" ph="SELECT task.... task" />
+            <marker date="1511278482536" expanded="true" signature="2716:2863" ph="SELECT task.... task" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

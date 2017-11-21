@@ -126,6 +126,7 @@ tasksController = function() {
 							function() {
 								$(evt.target).parents('tr').remove(); 
 								taskCountChanged();
+
 							}, errorLogger);
 						
 					}
@@ -182,6 +183,7 @@ tasksController = function() {
          */
 		loadServerTasks: function(tasks) {
             $(taskPage).find('#tblTasks tbody').empty();
+            console.log("server: "+ tasks);
             $.each(tasks, function (index, task) {
                 if (!task.complete) {
                     task.complete = false;
@@ -190,6 +192,9 @@ tasksController = function() {
                 taskCountChanged();
                 console.log('about to render table with server tasks');
                 //renderTable(); --skip for now, this just sets style class for overdue tasks 111917kl
+				storageEngine.save('task', task, function(){
+					console.log("task: " + task);
+				}, errorLogger);
             });
 		},
         loadServerUsers: function(tasks) {

@@ -75,7 +75,7 @@ public class TaskServlet extends HttpServlet {
         }
         else {
             List<Task> taskList = new ArrayList<>();
-            query = "SELECT * FROM task";
+            query = "SELECT task.id,task.name,task.due,task.category,task.user_id,user.name as username,task.priority FROM task left join user on task.user_id = user.id";
             try {
                 Statement st = db.createStatement();
                 ResultSet rs = st.executeQuery(query);
@@ -85,6 +85,7 @@ public class TaskServlet extends HttpServlet {
                             rs.getString("due"),
                             rs.getString("category"),
                             rs.getInt("user_id"),
+                            rs.getString("username"),
                             rs.getString("priority"));
 
                     taskList.add(task);
