@@ -22,10 +22,7 @@ import java.util.List;
 public class TaskServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        System.out.println("DB connection");
         Connection db =  DBConnection.getConnection();
-        System.out.println("DB connection 2");
-
         String type = request.getParameter("type");
         String name = request.getParameter("name");
         String due = request.getParameter("due");
@@ -34,14 +31,11 @@ public class TaskServlet extends HttpServlet {
         String priority = request.getParameter("priority");
         int team = Integer.parseInt(request.getParameter("team"));
 
-        System.out.println(type+" "+name+" "+due+" "+category+ " "+userid+" "+priority);
+        System.out.println(type+" "+name+" "+due+" "+category+ " "+userid+" "+priority+" "+team);
 
         String query = "";
         if(type != null && type.equals("add")) {
-
-            query = "INSERT INTO task(name, due, category, user_id, priority, team_id) VALUES ('"
-                    +name +"', '" + due + "', '" +category +"'," + userid + ",'" + priority +"'," + team+")";
-
+            query = "INSERT INTO task(name, due, category, user_id, priority, team_id) VALUES ('" +name +"', '" + due + "', '" +category +"'," + userid + ",'" + priority +"'," + team+")";
             try {
                 PreparedStatement preparedStmt = db.prepareStatement(query);
                 preparedStmt.execute();

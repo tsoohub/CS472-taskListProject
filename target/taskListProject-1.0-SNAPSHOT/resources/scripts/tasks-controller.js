@@ -86,6 +86,8 @@ tasksController = function() {
 
     function displayAddUser(data) { //this needs to be bound to the tasksController -- used bind in retrieveTasksServer 111917kl
         console.log(data);
+        // Retrieve tasks list from Server side.
+        retrieveTasksServer();
     }
 	
 	function taskCountChanged() {
@@ -181,20 +183,19 @@ tasksController = function() {
                     evt.preventDefault();
                     if ($(taskPage).find('form').valid()) {
                         var task = $(taskPage).find('form').toObject();
-                        console.log('task save'+ task);
-
+                        //Save to localStorage
+                        storageEngine.save('task', task, function() {
+                            console.log("save success");
+                            $(taskPage).find('#tblTasks tbody').empty();
+                            tasksController.loadTasks();
+                            clearTask();
+                            $(taskPage).find('#taskCreation').addClass('not');
+                            console.log("end function");
+                        }, errorLogger);
+                        // Save to Server side
                         saveTaskServer(task.task, task.requiredBy, task.category, task.username, task.priority, task.team);
 
-                        // storageEngine.save('task', task, function() {
-                        //     console.log("save success");
-                        //     $(taskPage).find('#tblTasks tbody').empty();
-                        //     tasksController.loadTasks("Due", true);
-                        //     clearTask();
-                        //     $(taskPage).find('#taskCreation').addClass('not');
-                        //     console.log("end function");
-                        // }, errorLogger);
                     }
-
                 });
 				initialised = true;
 			}
@@ -205,15 +206,14 @@ tasksController = function() {
          */
 		loadServerTasks: function(tasks) {
             $(taskPage).find('#tblTasks tbody').empty();
-            console.log("server: "+ tasks);
+
             $.each(tasks, function (index, task) {
                 if (!task.complete) {
                     task.complete = false;
                 }
                 $('#taskRow').tmpl(task).appendTo($(taskPage).find('#tblTasks tbody'));
                 taskCountChanged();
-                console.log('about to render table with server tasks');
-                //renderTable(); --skip for now, this just sets style class for overdue tasks 111917kl
+
 				storageEngine.save('task', task, function(){
 					console.log("task: " + task);
 				}, errorLogger);
@@ -226,8 +226,6 @@ tasksController = function() {
 
                 $('#userOption').tmpl(task).appendTo($(taskPage).find('#users'));
 
-                console.log('about to render users to combobox ');
-                //renderTable(); --skip for now, this just sets style class for overdue tasks 111917kl
                 storageEngine.save('task', task, function(){
                     console.log("task: " + task);
                 }, errorLogger);
@@ -240,8 +238,6 @@ tasksController = function() {
 
                 $('#teamOption').tmpl(task).appendTo($(taskPage).find('#team'));
 
-                console.log('about to render users to combobox ');
-                //renderTable(); --skip for now, this just sets style class for overdue tasks 111917kl
                 storageEngine.save('task', task, function(){
                     console.log("task: " + task);
                 }, errorLogger);
@@ -256,8 +252,6 @@ tasksController = function() {
                 }
             }).done(function (data) {
                 $('#userfilter').append('<option></option>');
-
-                console.log('data: '+data);
 
                 $.each(data, function (index, task) {
                     $('#userOption').tmpl(task).appendTo($(taskPage).find('#userfilter'));
