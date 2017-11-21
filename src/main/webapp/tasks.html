@@ -47,6 +47,9 @@
 			<div>
 				<label>User</label> <select name="username" id="users"></select>
 			</div>
+			<div>
+				<label>Team</label> <select name="team" id="team"></select>
+			</div>
 
 			<nav>
 				<a href="#" id="saveTask">Save task</a>    <!-- https://stackoverflow.com/questions/4855168/what-is-href-and-why-is-it-used -->
@@ -82,7 +85,7 @@
 		<nav>
 			<a href="#" id="btnAddTask">Add task</a>
 			<a href="#" id="btnRetrieveTasks">Retrieve tasks from server</a>
-
+			<select name="username" id="userfilter" style="width: 100px;"></select>
 		</nav>
 	</section>
 	</main>
@@ -93,6 +96,7 @@ function initScreen() {
 	$(document).ready(function() {
 		tasksController.init($('#taskPage'), function() {
 			tasksController.loadTasks();
+			tasksController.loadInitialUsers();
 		});		
 	});
 }
@@ -137,6 +141,10 @@ if (window.indexedDB) {
 </script>
 
 <script id="userOption" type="text/x-jQuery-tmpl">
+	<option value="${id}">${name}</option>
+</script>
+
+<script id="teamOption" type="text/x-jQuery-tmpl">
 	<option value="${id}">${name}</option>
 </script>
 

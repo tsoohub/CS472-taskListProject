@@ -2,6 +2,7 @@ package controller;
 
 import com.google.gson.Gson;
 import model.Task;
+import model.Team;
 import model.User;
 import utility.DBConnection;
 import utility.MockData;
@@ -21,7 +22,9 @@ import java.util.List;
 public class TaskServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        System.out.println("DB connection");
         Connection db =  DBConnection.getConnection();
+        System.out.println("DB connection 2");
 
         String type = request.getParameter("type");
         String name = request.getParameter("name");
@@ -29,15 +32,15 @@ public class TaskServlet extends HttpServlet {
         String category = request.getParameter("category");
         int userid = Integer.parseInt(request.getParameter("userid")) ;
         String priority = request.getParameter("priority");
-
+        int team = Integer.parseInt(request.getParameter("team"));
 
         System.out.println(type+" "+name+" "+due+" "+category+ " "+userid+" "+priority);
 
         String query = "";
         if(type != null && type.equals("add")) {
 
-            query = "INSERT INTO task(name, due, category, user_id, priority) VALUES ('"
-                    +name +"', '" + due + "', '" +category +"'," + userid + ",'" + priority +"')";
+            query = "INSERT INTO task(name, due, category, user_id, priority, team_id) VALUES ('"
+                    +name +"', '" + due + "', '" +category +"'," + userid + ",'" + priority +"'," + team+")";
 
             try {
                 PreparedStatement preparedStmt = db.prepareStatement(query);
@@ -57,7 +60,8 @@ public class TaskServlet extends HttpServlet {
         String JSONtasks = "";
         String param = request.getParameter("reqtype");
 
-        if(param != null && param.equals("user")) {
+        if(param != null && param.equals("usercombo")) {
+
            List<User> userList = new ArrayList<>();
            query = "SELECT * FROM user";
 
@@ -73,9 +77,33 @@ public class TaskServlet extends HttpServlet {
             }
             JSONtasks = new Gson().toJson(userList);
         }
+        else if(param != null && param.equals("team")) {
+
+            List<Team> teamList = new ArrayList<>();
+            query = "SELECT * FROM team";
+
+            try {
+                Statement st = db.createStatement();
+                ResultSet rs = st.executeQuery(query);
+                while(rs.next()) {
+                    Team user = new Team(rs.getInt("id"), rs.getString("name"));
+                    teamList.add(user);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            JSONtasks = new Gson().toJson(teamList);
+        }
         else {
+            String userid = request.getParameter("user");
+
             List<Task> taskList = new ArrayList<>();
-            query = "SELECT task.id,task.name,task.due,task.category,task.user_id,user.name as username,task.priority FROM task left join user on task.user_id = user.id";
+
+            if (userid == null || userid=="") {
+                query = "SELECT task.id,task.name,task.due,task.category,task.user_id,user.name as username,task.priority FROM task left join user on task.user_id = user.id";
+            }
+            else
+                query = "SELECT task.id,task.name,task.due,task.category,task.user_id,user.name as username,task.priority FROM task left join user on task.user_id = user.id where task.user_id = "+userid;
             try {
                 Statement st = db.createStatement();
                 ResultSet rs = st.executeQuery(query);

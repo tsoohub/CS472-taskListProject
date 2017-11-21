@@ -12,14 +12,18 @@ tasksController = function() {
 	 * currently just testing this and writing return value out to console
 	 * 111917kl
      */
+
 	function retrieveTasksServer() {
+
+		const user = $('#userfilter').val();
+        console.log('user: '+user);
+
         $.ajax("TaskServlet", {
             "type": "get",
-			dataType: "json"
-            // "data": {
-            //     "first": first,
-            //     "last": last
-            // }
+			dataType: "json",
+            "data": {
+                "user": user,
+            }
         }).done(displayTasksServer.bind()); //need reference to the tasksController object
     }
 
@@ -28,11 +32,19 @@ tasksController = function() {
 		$.ajax("TaskServlet", {
 			"type": "get",
 			dataType: "json",
-            "data": {"reqtype" : "user"},
+            "data": {"reqtype" : "usercombo"},
 		}).done(displayUserServer.bind());
     }
 
-    function saveTaskServer(name, due, category, userid, priority) {
+    function retrieveTeamsServer() {
+        $.ajax("TaskServlet", {
+            "type": "get",
+            dataType: "json",
+            "data": {"reqtype" : "team"},
+        }).done(displayTeamServer.bind());
+    }
+
+    function saveTaskServer(name, due, category, userid, priority, team) {
 
         $.ajax("TaskServlet", {
             "type": "post",
@@ -42,7 +54,8 @@ tasksController = function() {
 				"due" : due,
 				"category" : category,
 				"userid" : userid,
-				"priority" : priority
+				"priority" : priority,
+				"team" : team,
 			},
         }).done(displayAddUser);
     }
@@ -63,6 +76,13 @@ tasksController = function() {
 
         tasksController.loadServerUsers(data);
     }
+
+
+    function displayTeamServer(data) {
+        console.log(data);
+
+        tasksController.loadServerTeams(data);
+	}
 
     function displayAddUser(data) { //this needs to be bound to the tasksController -- used bind in retrieveTasksServer 111917kl
         console.log(data);
@@ -94,6 +114,7 @@ tasksController = function() {
 				callback()
 			} else {
 				taskPage = page;
+
 				storageEngine.init(function() {
 					storageEngine.initObjectStore('task', function() {
 						callback();
@@ -107,6 +128,7 @@ tasksController = function() {
 					$(taskPage).find('#taskCreation').removeClass('not');
 
                     retrieveUsersServer();
+                    retrieveTeamsServer();
 				});
 
                 /**	 * 11/19/17kl        */
@@ -159,18 +181,18 @@ tasksController = function() {
                     evt.preventDefault();
                     if ($(taskPage).find('form').valid()) {
                         var task = $(taskPage).find('form').toObject();
-                        console.log(task);
+                        console.log('task save'+ task);
 
-                        saveTaskServer(task.task, task.requiredBy, task.category, task.user, task.priority );
+                        saveTaskServer(task.task, task.requiredBy, task.category, task.username, task.priority, task.team);
 
-                        storageEngine.save('task', task, function() {
-                            console.log("save success");
-                            $(taskPage).find('#tblTasks tbody').empty();
-                            tasksController.loadTasks("Due", true);
-                            clearTask();
-                            $(taskPage).find('#taskCreation').addClass('not');
-                            console.log("end function");
-                        }, errorLogger);
+                        // storageEngine.save('task', task, function() {
+                        //     console.log("save success");
+                        //     $(taskPage).find('#tblTasks tbody').empty();
+                        //     tasksController.loadTasks("Due", true);
+                        //     clearTask();
+                        //     $(taskPage).find('#taskCreation').addClass('not');
+                        //     console.log("end function");
+                        // }, errorLogger);
                     }
 
                 });
@@ -198,6 +220,7 @@ tasksController = function() {
             });
 		},
         loadServerUsers: function(tasks) {
+            storageEngine.initializedObjectStores = {};
             $(taskPage).find('#users').empty();
             $.each(tasks, function (index, task) {
 
@@ -205,6 +228,41 @@ tasksController = function() {
 
                 console.log('about to render users to combobox ');
                 //renderTable(); --skip for now, this just sets style class for overdue tasks 111917kl
+                storageEngine.save('task', task, function(){
+                    console.log("task: " + task);
+                }, errorLogger);
+            });
+        },
+        loadServerTeams: function(tasks) {
+            storageEngine.initializedObjectStores = {};
+            $(taskPage).find('#team').empty();
+            $.each(tasks, function (index, task) {
+
+                $('#teamOption').tmpl(task).appendTo($(taskPage).find('#team'));
+
+                console.log('about to render users to combobox ');
+                //renderTable(); --skip for now, this just sets style class for overdue tasks 111917kl
+                storageEngine.save('task', task, function(){
+                    console.log("task: " + task);
+                }, errorLogger);
+            });
+        },
+        loadInitialUsers: function() {
+            $.ajax("TaskServlet", {
+                "type": "get",
+                dataType: "json",
+                data: {
+                    "reqtype" : "usercombo",
+                }
+            }).done(function (data) {
+                $('#userfilter').append('<option></option>');
+
+                console.log('data: '+data);
+
+                $.each(data, function (index, task) {
+                    $('#userOption').tmpl(task).appendTo($(taskPage).find('#userfilter'));
+                    console.log('about to render users filter to combobox ');
+                });
             });
         },
 		loadTasks : function(filterField, increase) {
