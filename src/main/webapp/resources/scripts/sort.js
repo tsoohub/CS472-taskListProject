@@ -8,4 +8,8 @@ $(document).ready(function(){
         tasksController.loadTasks("Priority", increase);
         increase = !increase;
     });
+    $("#userSort").click(function(){
+        tasksController.loadTasks("User", increase);
+        increase = !increase;
+    });
 });

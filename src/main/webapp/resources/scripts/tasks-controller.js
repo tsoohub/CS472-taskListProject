@@ -255,7 +255,12 @@ tasksController = function() {
                         	return (o1.priority) < (o2.priority);
 						else
                             return (o2.priority) < (o1.priority);
-					}
+					} else if(filterField ==="User"){
+                        if(increase === true)
+                            return (o1.username) < (o2.username);
+                        else
+                            return (o2.username) < (o1.username);
+                    }
 				});
 
 				$.each(tasks, function(index, task) {
