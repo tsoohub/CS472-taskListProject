@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2017 at 10:51 PM
+-- Generation Time: Nov 21, 2017 at 09:33 PM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
 
@@ -34,16 +34,38 @@ CREATE TABLE `task` (
   `due` varchar(10) NOT NULL,
   `category` varchar(50) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `priority` varchar(50) NOT NULL
+  `priority` varchar(50) NOT NULL,
+  `team_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `task`
 --
 
-INSERT INTO `task` (`id`, `name`, `due`, `category`, `user_id`, `priority`) VALUES
-(1, 'first task', '2017-11-21', 'Personal', 1, 'High'),
-(2, 'second task', '10-25-2017', 'Work', 2, 'Low');
+INSERT INTO `task` (`id`, `name`, `due`, `category`, `user_id`, `priority`, `team_id`) VALUES
+(8, 'Sixth', '2017-11-22', 'Work', 3, '3', 0),
+(9, 'hhhh', '2017-11-22', 'Personal', 1, '3', 0),
+(10, 'Union tesy', '2017-11-22', 'Personal', 2, '4', 0),
+(11, 'Breakfast', '2017-11-15', 'Personal', 1, '1', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `team`
+--
+
+CREATE TABLE `team` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `team`
+--
+
+INSERT INTO `team` (`id`, `name`) VALUES
+(1, 'Hacking Team'),
+(2, 'Roadmap Team');
 
 -- --------------------------------------------------------
 
@@ -62,8 +84,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `name`) VALUES
 (1, 'Mandakh'),
-(2, 'Tsoodol'),
-(3, 'Nguyeh');
+(2, 'Nguyeh'),
+(3, 'Tsoodol');
 
 --
 -- Indexes for dumped tables
@@ -73,6 +95,12 @@ INSERT INTO `user` (`id`, `name`) VALUES
 -- Indexes for table `task`
 --
 ALTER TABLE `task`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `team`
+--
+ALTER TABLE `team`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -89,12 +117,17 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `task`
 --
 ALTER TABLE `task`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+--
+-- AUTO_INCREMENT for table `team`
+--
+ALTER TABLE `team`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
