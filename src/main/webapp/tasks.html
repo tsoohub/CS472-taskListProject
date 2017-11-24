@@ -100,7 +100,7 @@ function initScreen() {
 		});		
 	});
 }
-if (window.indexedDB) {
+if (window.indexedDB) {	// Browser support indexDB, go here
 	console.log("using indexedDB 111917kl");
 	$.getScript( "resources/scripts/tasks-indexeddb.js" )
 	.done(function( script, textStatus ) {

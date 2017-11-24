@@ -24,7 +24,7 @@ tasksController = function() {
             "data": {
                 "user": user,
             }
-        }).done(displayTasksServer.bind()); //need reference to the tasksController object
+        }).done(displayTasksServer.bind());
     }
 
     function retrieveUsersServer() {
